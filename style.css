@@ -47,6 +47,32 @@ input[type='submit'] {
 
 }
 
+form p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.input-container p.msg {
+    visibility: hidden;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.input-container.error {
+  visibility: visible;
+}
+
+
+
+.input-container.error input {
+    border-color: red;
+}
+
+.input-container.success input {
+    border-color: rgb(97, 249, 97);
+}
+
 img {
     width: 51%;
     position: absolute;

@@ -43,6 +43,22 @@ submit.addEventListener('click', e => {
     else {
         showMessage(emailMessage, 'Thank you for providing your email', 'green');
     }
+
+       
+    if (password1 === '') {
+        showMessage(password1Message, 'Please provide your password', 'red');
+    }
+    else {
+        showMessage(password1Message, 'Valid password', 'green');
+    }
+
+       
+    if (password2.value === '') {
+        showMessage(password2Message, 'Please confirm your password', 'red');
+    }
+    else if(password1.value !== password2.value){
+        showMessage(password2Message, 'Valid Password', 'green');
+    }
 });
 
 function showMessage(element, msg, color) {
@@ -51,3 +67,5 @@ function showMessage(element, msg, color) {
     element.style.color = color;
     element.previousElementSibling.style.border = '2px solid $(color)';
 }
+
+

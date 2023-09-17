@@ -45,7 +45,7 @@ submit.addEventListener('click', e => {
     }
 
        
-    if (password1 === '') {
+    if (password1.value === '') {
         showMessage(password1Message, 'Please provide your password', 'red');
     }
     else {
